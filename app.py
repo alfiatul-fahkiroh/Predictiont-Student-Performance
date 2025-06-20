@@ -1,11 +1,11 @@
 # --- Menggunakan Model untuk Prediksi Data Baru ---
 print("\nMasukkan data baru untuk memprediksi kategori waktu lulus:")
 try:
-new_ACT = float(input("Masukkan nilai ACT composite score: "))
-new_SAT = float(input("Masukkan nilai SAT total score: "))
-new_GPA = float(input("Masukkan nilai rata-rata SMA: "))
-new_income = float(input("Masukkan nilai pendapatan orang tua: "))
-new_education = float(input("Masukkan tingkat pendidikan orang tua (angka): ")) # numerik
+new_ACT = joblib(input("Masukkan nilai ACT composite score: "))
+new_SAT = joblib(input("Masukkan nilai SAT total score: "))
+new_GPA = joblib(input("Masukkan nilai rata-rata SMA: "))
+new_income = joblib(input("Masukkan nilai pendapatan orang tua: "))
+new_education = joblib(input("Masukkan tingkat pendidikan orang tua (angka): ")) # numerik
 # Buat DataFrame dari input baru
 new_data_df = pd.DataFrame(
 [[new_ACT, new_SAT, new_GPA, new_income, new_education]],
